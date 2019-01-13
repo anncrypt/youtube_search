@@ -11,6 +11,7 @@ class SearchBar extends React.Component {
     e.preventDefault();
 
     // TODO: make sure to call a calback from parent component
+    this.props.onSearchTermSubmit(this.state.searchTerm);
   }
 
   render() {
